@@ -1,22 +1,16 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from "react";
+import styles from "./styles.css";
 
-import styles from './styles.css'
-
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
+export default class ReactKHI extends Component {
   render() {
-    const {
-      text
-    } = this.props
-
     return (
-      <div className={styles.test}>
-        Example Component: {text}
+      <div className={styles.main_container}>
+        <img
+          src="https://s3.amazonaws.com/media-p.slid.es/uploads/905781/images/5335091/pasted-from-clipboard.png"
+          alt="reactkhi logo"
+          className={styles.image}
+        />
       </div>
-    )
+    );
   }
 }
